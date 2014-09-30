@@ -14,5 +14,8 @@ home.config(['$routeProvider',
             '/test', {
                 templateUrl: 'views/test.html',
                 reloadOnSearch: false
+            }).otherwise({
+                templateUrl: 'views/about.html',
+                reloadOnSearch: false
             });
     }]);
